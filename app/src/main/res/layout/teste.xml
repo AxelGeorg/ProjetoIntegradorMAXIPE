@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#DEDEDE"
+    android:padding="2dp"
+    android:layout_margin="1dp"
+    card_view:cardBackgroundColor="#F7F7F7"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="3dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/horarioLembrete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="22:22"
+            android:textColor="@color/corAzulPadrao"
+            android:textSize="50dp"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/tituloLembrete"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:text="Titulo do vídeo"
+            android:textColor="@color/colorAccent"
+            android:textSize="25dp"
+            android:layout_alignTop="@id/horarioLembrete"
+            android:layout_toRightOf="@id/horarioLembrete"
+            android:layout_toLeftOf="@id/botaoLixo"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/diaSemanaLembrete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:text="Dia da semana"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp"
+            android:layout_alignBaseline="@id/horarioLembrete"
+            android:layout_alignBottom="@id/horarioLembrete"
+            android:layout_toRightOf="@id/horarioLembrete"
+            android:layout_marginStart="10dp"/>
+
+        <ImageButton
+            android:id="@+id/botaoLixo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/imagem_lixo"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".view.MainCustom_Dialog">
+
+    <VideoView
+    android:id="@+id/VideoResp"
+    android:layout_width="628dp"
+    android:layout_height="406dp"
+    android:layout_alignParentTop="true"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="80dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.437"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botaoSairDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SairDR"
+        android:background="@color/corAzulPadrao"
+
+        android:text="Sair" />
+
+
+</LinearLayout>

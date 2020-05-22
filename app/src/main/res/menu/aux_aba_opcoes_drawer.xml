@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:background="#004c92">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Perfil"
+            android:onClick="PerfilAux"
+            />
+        <item
+            android:id="@+id/nav_sair"
+            android:icon="@drawable/sair"
+            android:title="Sair"
+            android:onClick="sairApp"/>
+        <item android:title="" />
+        <item android:title="" />
+        <item android:title="" />
+        <item android:title="" />
+        <item android:title="" />
+        <item android:title="" />
+        <item android:title="" />
+        <item
+            android:id="@+id/fecharApp"
+            android:icon="@drawable/fechar"
+            android:title="Finalizar App"
+            android:onClick="FecharApp"
+
+            />
+    </group>
+
+</menu>

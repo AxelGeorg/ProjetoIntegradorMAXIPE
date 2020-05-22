@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutC"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".view.MainCadastroResp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="MAXIPE"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/botaoCadastrarResp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/botao"
+        android:onClick="CadastrarResp"
+        android:text="CADASTRAR"
+        android:textSize="18sp"
+        app:layout_constraintVertical_bias="0.95"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textView2"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/confirmarSenha_InputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Confirmar Senha"
+        android:theme="@style/TextInputLayout.HintText"
+        app:layout_constraintVertical_bias="0.92"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/botaoCadastrarResp" >
+
+        <EditText
+            android:id="@+id/confirmarSenha_EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:hint="Confirmar Senha"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHint="@color/colorAccent" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/senha_InputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:theme="@style/TextInputLayout.HintText"
+        app:layout_constraintBottom_toTopOf="@id/botaoCadastrarResp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.79">
+
+        <EditText
+            android:id="@+id/senha_EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Senha"
+            android:textColor="#000000"
+            android:textColorHint="@color/colorAccent">
+
+        </EditText>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/telefone_InputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Telefone Ex.: (47)99999-9999"
+        android:theme="@style/TextInputLayout.HintText"
+        app:layout_constraintBottom_toTopOf="@id/botaoCadastrarResp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.66">
+
+        <EditText
+            android:id="@+id/telefone_EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:hint="Telefone"
+            android:inputType="phone"
+            android:textColor="#000000"
+            android:maxLength="14"
+            android:textColorHint="@color/colorAccent">
+        </EditText>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/email_InputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Email (exemplo@exemplo.com)"
+        android:theme="@style/TextInputLayout.HintText"
+        app:layout_constraintBottom_toTopOf="@id/botaoCadastrarResp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53">
+
+        <EditText
+            android:id="@+id/email_EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"
+            android:textColorHint="@color/colorAccent">
+        </EditText>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/nomeCompleto_InputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nome Completo "
+        android:theme="@style/TextInputLayout.HintText"
+        app:layout_constraintBottom_toTopOf="@id/botaoCadastrarResp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.4">
+
+        <EditText
+            android:id="@+id/nomeCompleto_EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:hint="Nome Completo"
+            android:inputType="textCapWords"
+            android:textColor="#000000"
+            android:textColorHint="@color/colorAccent"></EditText>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imagemAdd2"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:src="@drawable/add_user"
+        app:layout_constraintBottom_toTopOf="@id/nomeCompleto_InputLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="1"
+        />
+
+    <Button
+        android:id="@+id/botaoVoltar"
+        android:layout_width="87dp"
+        android:layout_height="31dp"
+        android:background="@drawable/botao"
+        android:onClick="voltarTela"
+        android:text="Voltar"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toTopOf="@id/botaoCadastrarResp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.01"
+        app:layout_constraintHorizontal_bias="0.01"/>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
